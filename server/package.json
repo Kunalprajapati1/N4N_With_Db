@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ../client",
+    "dev": " concurrently \"npm run server\" \"npm run client\" ",
+    "ngo:import": "node seeder.js",
+    "admin:import": "node seeder.js"
+  },
+  "author": "Meenakshi Panchal",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "bcrypt": "^5.1.1",
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.2",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.5",
+    "nodemon": "^3.0.1",
+    "react-router-dom": "^6.14.1"
+  }
+}

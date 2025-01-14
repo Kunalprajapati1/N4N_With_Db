@@ -1,0 +1,207 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 80%;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+}
+.background-fade {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: contain;
+  animation: fade 1s ease-in-out forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.App {
+  text-align: center;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.test {
+  background-attachment: fixed;
+}
+
+.login {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -53%);
+  color: white;
+  text-align: center;
+}
+.head {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.custom-border {
+  border: 9px solid;
+  border-image: linear-gradient(to right, #3498db, #2ecc71);
+  border-image-slice: 1;
+  border-radius: 45px;
+}
+
+.custom-border:hover {
+  /* border-image: linear-gradient(to right, #0099ff, #00ff6a); Adjust the hover border color as needed */
+  filter: brightness(110%);
+  transition:  0.3s ease-in-out;
+  border: 9px solid;
+}
+
+.donate {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+
+  transform: translate(75%, -120%);
+
+  width: 100px;
+  text-align: center;
+}
+
+.NGO {
+  background-image: url("https://images.unsplash.com/photo-1666112835145-d79fc3f2e008?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+  background-position: center;
+  background-size: cover;
+  /* opacity: 1; */
+  /* filter: blur(2px); */
+  -webkit-animation: backNGO 10s infinite; /* Safari 4+ */
+  -moz-animation: backNGO 15s infinite; /* Fx 5+ */
+  -o-animation: backNGO 15s infinite; /* Opera 12+ */
+  animation: backNGO 12s infinite; /* IE 10+, Fx 29+ */
+}
+/* The Keyframes*/
+@keyframes backNGO {
+  25% {
+    background-image: url("https://images.unsplash.com/photo-1632220894022-a83eacddae2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  }
+  35% {
+    background-image: url("https://images.unsplash.com/photo-1649182325585-27a7d33563b5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  }
+
+  50% {
+    background-image: url("https://images.unsplash.com/photo-1701430946144-09675a15942a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  }
+  75% {
+    background-image: url("https://images.unsplash.com/photo-1704140159556-88e2e6177def?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  }
+  95% {
+    background-image: url("https://images.unsplash.com/photo-1652611059016-48c49aa6a573?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  }
+
+  /* Animation Does Not End At 100% Because It Makes The Images Transition In/Out Better For Some Reason*/
+}
+
+.with-bg-size {
+  background-image: url("https://images.unsplash.com/photo-1635614017406-7c192d832072?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+  background-position: center;
+  background-size: cover;
+  /* opacity: 1; */
+  /* filter: blur(2px); */
+  -webkit-animation: back 10s infinite; /* Safari 4+ */
+  -moz-animation: back 15s infinite; /* Fx 5+ */
+  -o-animation: back 15s infinite; /* Opera 12+ */
+  animation: back 12s infinite; /* IE 10+, Fx 29+ */
+}
+/* The Keyframes*/
+@keyframes back {
+  25% {
+    background-image: url("https://images.unsplash.com/photo-1683464874461-10dc94908671?q=80&w=1992&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  }
+  50% {
+    background-image: url("https://images.unsplash.com/photo-1652611059016-48c49aa6a573?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  }
+
+  75% {
+    background-image: url("https://images.unsplash.com/photo-1646142998103-e50b8fef39fd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  }
+  105% {
+    background-image: url("https://images.unsplash.com/photo-1650871604168-2e8b22829db8?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  }
+  135% {
+    background-image: url("https://images.unsplash.com/photo-1651151798244-e2641c1af115?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  }
+
+  /* Animation Does Not End At 100% Because It Makes The Images Transition In/Out Better For Some Reason*/
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.projects--viewAll a button {
+  outline: none;
+  border: none;
+  width: 150px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: inherit;
+  border-radius: 45px;
+  font-size: 1.05rem;
+  font-family: var(--primaryFont);
+  font-weight: 500;
+  padding-left: 1.5rem;
+  cursor: pointer;
+}
+.project-grid {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* gap: rem;   */
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Gruppo&family=Rubik+Doodle+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alkatra&family=Cookie&family=Foldit&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alkatra&family=Cookie&family=Foldit&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alkatra&family=Boogaloo&family=Cookie&family=Foldit&family=Rubik+Pixels&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alkatra&family=Boogaloo&family=Cookie&family=Foldit&family=Rubik+Pixels&family=Source+Sans+Pro:wght@200&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=WindSong&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=WindSong&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
